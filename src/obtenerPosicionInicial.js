@@ -1,4 +1,4 @@
-function PocicionInciial(Comandos)
+function PosicionInicial(Comandos)
 {
   let cont=0;
   let cont2=0;
@@ -20,4 +20,4 @@ function PocicionInciial(Comandos)
   return salida;
 }
 
-export default PocicionInciial;
+export default PosicionInicial;

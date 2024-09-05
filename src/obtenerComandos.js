@@ -1,4 +1,4 @@
-function OptenerComandos(Comandos)
+function ObtenerComandos(Comandos)
 {
     let cont=0;
     let salida=[];
@@ -15,4 +15,4 @@ function OptenerComandos(Comandos)
     }
     return salida;
 }
-export default OptenerComandos;
+export default ObtenerComandos;
