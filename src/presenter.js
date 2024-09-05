@@ -1,11 +1,12 @@
+import MobAuto from "./obtenerPosicionFinal";
 import ObtenerComandos from "./obtenerComandos";
-import PosicionInicial from "./obtenerPosicionInicial";
+import PosicionInicial from "./obtenerPocicionInicial";
 import TamMatriz from "./obtenerTamanioMatriz";
 const Comandos = document.querySelector("#Comandos");
 const form = document.querySelector("#superficie-form");
 const divPosIncial = document.querySelector("#PosicionInicial-div");
 const divComandos = document.querySelector("#Comandos-div");
-
+const divPosFinal=document.querySelector("#Pocicion-final-div");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   
@@ -20,4 +21,5 @@ form.addEventListener("submit", (event) => {
   ComandosObtenidos=ObtenerComandos(ValorComandos);
   divPosIncial.innerHTML = "<p>Posicion Inicial: " + PosInicialX + "," + PosInicialY + " Direccion: " + Direccion  + "</p>";
   divComandos.innerHTML="<p>Comandos: " +ComandosObtenidos + "</p>"
+  divPosFinal.innerHTML="<p>Posicion Final: " + MobAuto(TamSuperficieX,TamSuperficieY,PosInicialX,PosInicialY,Direccion,ComandosObtenidos) + "," +"</p>"
 });
