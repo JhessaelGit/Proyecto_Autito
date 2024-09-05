@@ -8,7 +8,7 @@ function TamMatriz(Comandos) {
     {
       cont++;
     }
-    if(cont===0 && Comandos[i]!="," && Comandos[i]!="/" )
+    if(cont===1 && Comandos[i]!="," && Comandos[i]!="/" )
     {
       salida[cont2]=Comandos[i];
       cont2++;
