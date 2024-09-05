@@ -1,4 +1,4 @@
-import MobAuto from "./controlarMovimiento";
+import MobAuto from "./obtenerPosicionFinal";
 describe("Tamanio Superficie", () => {
   it("deberia Obtener la posicion final del auto que se salio de rango", () => {
     expect(MobAuto(6,6,1,1,"O","AIADAIA")).toEqual("El Autito Salio Fuera Del Rango");
