@@ -1,4 +1,4 @@
-import PosicionInicial from "./obtenerPosicionInicial";
+import PosicionInicial from "./obtenerPocicionInicial";
 
 describe("Posicion Inicial",()=>{
     it("Deberia devolver La posicion Inicial de la cadena ingresada 1,1,O",()=>{
