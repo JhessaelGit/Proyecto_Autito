@@ -7,7 +7,7 @@
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest --watch",
-    "test-once": "jest optenerComandos.spec.js",
+    "test-once": "jest controlarMovimiento.spec.js",
     "cypress": "cypress open",
     "cypress-run": "cypress run"
   },
