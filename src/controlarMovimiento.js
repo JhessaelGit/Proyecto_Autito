@@ -8,7 +8,10 @@ function girar(direccion,comando)
             {
                 return "E";
             }
-            
+            if(comando==="I")
+            {
+                return "O";
+            }
             break;
         }
         case "S":
@@ -17,7 +20,10 @@ function girar(direccion,comando)
             {
                 return "O";
             }
-            
+            if(comando==="I")
+            {
+                return "E";
+            }
 
             break;
         }
@@ -27,7 +33,10 @@ function girar(direccion,comando)
             {
                 return "S";
             }
-            
+            if(comando==="I")
+            {
+                return "N";
+            }
 
             break;
         }
@@ -37,11 +46,15 @@ function girar(direccion,comando)
             {
                 return "N";
             }
-            
+            if(comando==="I")
+            {
+                return "S";
+            }
             break;
         }
     }
 }
+
 function MobAuto(tamX,tamY,posX,posY,Direccion,Comandos)
 {
     if(Direccion==="N" || Direccion==="S" || Direccion==="E" || Direccion==="O")
@@ -50,7 +63,11 @@ function MobAuto(tamX,tamY,posX,posY,Direccion,Comandos)
         {
             if(Comandos[i]==="D")
             {
-                Direccion=girar(Direccion,comando[i]);
+                Direccion=girar(Direccion,Comandos[i]);
+            }
+            else if(Comandos[i]==="I")
+            {
+                Direccion=girar(Direccion,Comandos[i]);
             }
         }
     }
